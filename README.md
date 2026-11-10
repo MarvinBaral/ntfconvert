@@ -1,7 +1,7 @@
-# Navionics Boating Track Decoder
+# .nts/.ntf Boating Track Converter
 
-Convert exported Navionics Boating app track files (`.nts` / `.ntf` pairs) into
-KML and GPX for viewing in Google Earth, and batch-convert whole directories.
+Convert Navionics Boating app track files (`.nts` / `.ntf` pairs) into
+`.kml` and `.gpx` for viewing in Google Earth, and batch-convert whole directories.
 
 Written in pure Python 3 (standard library only — no dependencies).
 
@@ -9,9 +9,8 @@ Written in pure Python 3 (standard library only — no dependencies).
 
 The Navionics Boating app (now part of Garmin) stores tracks and routes as
 binary files that are not publicly documented. This tool is the result of an
-independent reverse-engineering effort, performed solely by analyzing the
-user's own exported files in a hex editor. No Navionics or Garmin software,
-firmware, or documentation was used or decompiled.
+independent reverse-engineering effort, performed solely by analyzing the authors's own recorded files in a hex editor.
+No Navionics or Garmin software, firmware, or documentation was used or decompiled.
 
 **Key findings of the file format** (undocumented, may change between app
 versions):
