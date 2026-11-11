@@ -2,7 +2,7 @@
 """
 ntfconvert.py
 
-Decodes Navionics Boating .nts/.ntf file pairs (protobuf wire format) into
+Converts Navionics Boating .nts/.ntf file pairs (protobuf wire format) into
 KML/GPX for Google Earth. Validated format:
 
   Coordinates:  zigzag varints, degrees = zigzag(v) / 1e6,
