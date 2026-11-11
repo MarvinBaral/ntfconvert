@@ -44,8 +44,8 @@ Convert a single track pair (the sidecar `.nts` is picked up automatically
 for name/date/waypoint metadata):
 
 ```bash
-python3 navdecode.py kml <TRACK-UUID>.ntf -o track.kml
-python3 navdecode.py gpx <TRACK-UUID>.ntf -o track.gpx
+python3 ntfconvert.py kml <TRACK-UUID>.ntf -o track.kml
+python3 ntfconvert.py gpx <TRACK-UUID>.ntf -o track.gpx
 ```
 
 Add `--animate` to include timestamps (spread over the duration reported by
@@ -54,7 +54,7 @@ the `.nts`), enabling Google Earth's time slider / GPX `<time>` elements.
 Batch-convert a directory containing many `.ntf`/`.nts` pairs:
 
 ```bash
-python3 navdecode.py batch ~/Boating -o converted --fmt both --report report.md
+python3 ntfconvert.py batch ~/Boating -o converted --fmt both --report report.md
 ```
 
 Options:
